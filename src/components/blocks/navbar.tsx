@@ -126,11 +126,11 @@ export const Navbar = () => {
         {/* Auth Buttons */}
         <div className="flex items-center gap-2.5">
           <ThemeToggle />
-          <Link href="/login" className="max-lg:hidden">
+          <a href="https://rizor-e-i-r-l.vercel.app/login" className="max-lg:hidden" target="_blank" rel="noopener noreferrer">
             <Button variant="outline">
               <span className="relative z-10">Iniciar sesión</span>
             </Button>
-          </Link>
+          </a>
 
 
           {/* Hamburger Menu Button (Mobile Only) */}
