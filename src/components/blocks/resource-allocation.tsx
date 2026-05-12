@@ -6,9 +6,9 @@ import { cn } from "@/lib/utils";
 
 const topItems = [
   {
-    title: "Reusable issue templates.",
+    title: "Plantillas de documentos reutilizables.",
     description:
-      "Draft lightning-fast documents with our Smart Instructions and Templates.",
+      "Crea documentos en segundos con nuestras Instrucciones y Plantillas Inteligentes.",
     images: [
       {
         src: "/resource-allocation/templates.webp",
@@ -22,8 +22,8 @@ const topItems = [
     fade: [""],
   },
   {
-    title: "Simplify your stack.",
-    description: "No more Confluence, SharePoint, or Microsoft Word.",
+    title: "Simplifica tu stack.",
+    description: "Olvídate de Confluence, SharePoint y Microsoft Word.",
     images: [
       { src: "/logos/jira.svg", alt: "Jira logo", width: 48, height: 48 },
       { src: "/logos/excel.svg", alt: "Excel logo", width: 48, height: 48 },
@@ -62,9 +62,9 @@ const topItems = [
 
 const bottomItems = [
   {
-    title: "Graveyard it.",
+    title: "Archívalo.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.",
+      "Proyectos finalizados, ordenados y siempre accesibles.",
     images: [
       {
         src: "/resource-allocation/graveyard.webp",
@@ -78,9 +78,9 @@ const bottomItems = [
     fade: ["bottom"],
   },
   {
-    title: "Task discussions.",
+    title: "Discusiones de tareas.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "Comunica, revisa y aprueba cambios sin salir de la plataforma.",
     images: [
       {
         src: "/resource-allocation/discussions.webp",
@@ -94,9 +94,9 @@ const bottomItems = [
     fade: [""],
   },
   {
-    title: "Notifications.",
+    title: "Notificaciones.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "Mantente al día con alertas en tiempo real sobre tus proyectos.",
     images: [
       {
         src: "/resource-allocation/notifications.webp",
@@ -119,7 +119,7 @@ export const ResourceAllocation = () => {
     >
       <div className="">
         <h2 className="container text-center text-3xl tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
-          Mainline your resource allocation and execution
+          Optimiza tu asignación de recursos y ejecución
         </h2>
 
         <div className="mt-8 md:mt-12 lg:mt-20">

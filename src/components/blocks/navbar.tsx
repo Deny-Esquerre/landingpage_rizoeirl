@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { ChevronRight, Github } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
@@ -22,26 +22,25 @@ import { cn } from "@/lib/utils";
 
 const ITEMS = [
   {
-    label: "Features",
+    label: "Características",
     href: "#features",
     dropdownItems: [
       {
-        title: "Modern product teams",
+        title: "Equipos de producto modernos",
         href: "/#feature-modern-teams",
         description:
-          "Mainline is built on the habits that make the best product teams successful",
+          "Rizor está construido sobre los hábitos que hacen exitosos a los mejores equipos de producto",
       },
       {
-        title: "Resource Allocation",
+        title: "Asignación de Recursos",
         href: "/#resource-allocation",
-        description: "Mainline your resource allocation and execution",
+        description: "Optimiza tu asignación de recursos y ejecución con Rizor",
       },
     ],
   },
-  { label: "About Us", href: "/about" },
-  { label: "Pricing", href: "/pricing" },
+  { label: "Nosotros", href: "/about" },
   { label: "FAQ", href: "/faq" },
-  { label: "Contact", href: "/contact" },
+  { label: "Contacto", href: "/contact" },
 ];
 
 export const Navbar = () => {
@@ -52,18 +51,25 @@ export const Navbar = () => {
   return (
     <section
       className={cn(
-        "bg-background/70 absolute left-1/2 z-50 w-[min(90%,700px)] -translate-x-1/2 rounded-4xl border backdrop-blur-md transition-all duration-300",
+        "bg-background/70 absolute left-1/2 z-50 w-[min(90%,850px)] -translate-x-1/2 rounded-4xl border backdrop-blur-md transition-all duration-300",
         "top-5 lg:top-12",
       )}
     >
       <div className="flex items-center justify-between px-6 py-3">
         <Link href="/" className="flex shrink-0 items-center gap-2">
           <Image
-            src="/logo.svg"
-            alt="logo"
-            width={94}
-            height={18}
-            className="dark:invert"
+            src="/favicon/icono de menu bar.png"
+            alt="Rizor ERP"
+            width={120}
+            height={32}
+            className="h-8 w-auto dark:hidden"
+          />
+          <Image
+            src="/favicon/icono menu bar dark.png"
+            alt="Rizor ERP"
+            width={120}
+            height={32}
+            className="hidden h-8 w-auto dark:block"
           />
         </Link>
 
@@ -122,23 +128,17 @@ export const Navbar = () => {
           <ThemeToggle />
           <Link href="/login" className="max-lg:hidden">
             <Button variant="outline">
-              <span className="relative z-10">Login</span>
+              <span className="relative z-10">Iniciar sesión</span>
             </Button>
           </Link>
-          <a
-            href="https://github.com/shadcnblocks/mainline-nextjs-template"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Github className="size-4" />
-            <span className="sr-only">GitHub</span>
-          </a>
+
 
           {/* Hamburger Menu Button (Mobile Only) */}
           <button
             className="text-muted-foreground relative flex size-8 lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            <span className="sr-only">Open main menu</span>
+            <span className="sr-only">Abrir menú</span>
             <div className="absolute top-1/2 left-1/2 block w-[18px] -translate-x-1/2 -translate-y-1/2">
               <span
                 aria-hidden="true"

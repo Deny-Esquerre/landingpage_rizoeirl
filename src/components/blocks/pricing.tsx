@@ -28,10 +28,10 @@ const plans = [
     yearlyPrice: "$6",
     features: [
       "All free plan features and...",
-      "Mainline AI",
+      "Rizor AI",
       "Unlimited teams",
       "Unlimited issues and file uploads",
-      "Mainline Insights",
+      "Rizor Insights",
       "Admin roles",
     ],
   },
@@ -41,8 +41,8 @@ const plans = [
     yearlyPrice: "$6",
     features: [
       "All free plan features and...",
-      "Mainline AI",
-      "Supermainline AGI",
+      "Rizor AI",
+      "Rizor AGI",
       "Free daily catered lunch",
       "random HIPPA audits",
     ],
@@ -57,12 +57,12 @@ export const Pricing = ({ className }: { className?: string }) => {
       <div className="container max-w-5xl">
         <div className="space-y-4 text-center">
           <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-            Pricing
+            Precios
           </h2>
           <p className="text-muted-foreground mx-auto max-w-xl leading-snug text-balance">
-            Use Mainline for free with your whole team. Upgrade to enable
-            unlimited issues, enhanced security controls, and additional
-            features.
+            Usa Rizor ERP gratis con todo tu equipo. Actualiza para obtener
+            módulos ilimitados, controles de seguridad mejorados y
+            funciones adicionales.
           </p>
         </div>
 
@@ -123,7 +123,7 @@ export const Pricing = ({ className }: { className?: string }) => {
                   className="w-fit"
                   variant={plan.name === "Startup" ? "default" : "outline"}
                 >
-                  Get started
+                  Comenzar
                 </Button>
               </CardContent>
             </Card>

@@ -10,52 +10,52 @@ import { cn } from "@/lib/utils";
 
 const categories = [
   {
-    title: "Support",
+    title: "Soporte",
     questions: [
       {
-        question: "How do I update my account without breaking my laptop?",
+        question: "¿Cómo actualizo mi cuenta sin romper todo?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Puedes actualizar tu cuenta desde el panel de configuración. Todos los cambios se guardan automáticamente y no afectarán tus datos existentes. Si tienes dudas, nuestro equipo de soporte te guiará en el proceso.",
       },
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "¿El soporte es gratuito o tengo que googlearlo todo?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "El soporte básico es gratuito para todos los usuarios. Nuestro equipo responde vía email y chat en horario laboral. Los planes Startup y Empresarial incluyen soporte prioritario con tiempos de respuesta garantizados.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "¿Van a ser reemplazados por la IA?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "La IA está aquí para ayudarte, no para reemplazarte. Usamos inteligencia artificial para automatizar tareas repetitivas y darte insights, pero las decisiones importantes siempre las tomas tú. Piensa en la IA como tu asistente, no tu reemplazo.",
       },
     ],
   },
   {
-    title: "Your account",
+    title: "Tu cuenta",
     questions: [
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "¿Cómo configuro mi empresa en el sistema?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Al registrarte, el asistente de configuración te guiará paso a paso: ingresa el RUC, datos de tu empresa, y podrás invitar a tu equipo inmediatamente. El proceso completo toma menos de 5 minutos.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "¿Puedo invitar a mi equipo sin costo adicional?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Sí, en el plan Gratis puedes invitar miembros ilimitados. Los únicos límites son en la cantidad de equipos (2) y transacciones (500). Los planes pagos eliminan estas restricciones.",
       },
     ],
   },
   {
-    title: "Other questions",
+    title: "Otras preguntas",
     questions: [
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "¿Mis datos están seguros?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Absolutamente. Usamos cifrado de extremo a extremo, servidores en la nube con certificaciones de seguridad y realizamos copias de seguridad diarias. Tus datos son tuyos y no los compartimos con terceros.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "¿Funciona en mi celular o necesito una computadora?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Rizor funciona completamente en el navegador de tu celular, tablet o computadora. No necesitas instalar nada. La interfaz se adapta automáticamente al tamaño de tu pantalla.",
       },
     ],
   },
@@ -77,17 +77,17 @@ export const FAQ = ({
           <div className="space-y-4">
             {headerTag === "h1" ? (
               <h1 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-                Got Questions?
+                ¿Preguntas?
               </h1>
             ) : (
               <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-                Got Questions?
+                ¿Preguntas?
               </h2>
             )}
             <p className="text-muted-foreground max-w-md leading-snug lg:mx-auto">
-              If you can't find what you're looking for,{" "}
+              Si no encuentras lo que buscas,{" "}
               <Link href="/contact" className="underline underline-offset-4">
-                get in touch
+                contáctanos
               </Link>
               .
             </p>

@@ -9,16 +9,16 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const items = [
   {
-    title: "Purpose-built for product development",
-    image: "/features/triage-card.svg",
+    title: "Manejo y control de los contratos de tu personal, con alertas de vencimiento y renovación automática.",
+    image: "/favicon/1 de 3.png",
   },
   {
-    title: "Manage projects end-to-end",
-    image: "/features/cycle-card.svg",
+    title: "Emite facturas, boletas y comprobantes electrónicos al instante. Todo sincronizado con SUNAT.",
+    image: "/favicon/2 de 3.png",
   },
   {
-    title: "Build momentum and healthy habits",
-    image: "/features/overview-card.svg",
+    title: "Controla entradas, salidas y stock en tiempo real. evita desabastecimientos y pérdidas.",
+    image: "/favicon/3 de 3.png",
   },
 ];
 
@@ -37,12 +37,12 @@ export const Features = () => {
         {/* Content */}
         <div className="mx-auto mt-10 grid max-w-4xl items-center gap-3 md:gap-0 lg:mt-24 lg:grid-cols-2">
           <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-            Made for modern product teams
+            Hecho para equipos de producto modernos
           </h2>
           <p className="text-muted-foreground leading-snug">
-            Mainline is built on the habits that make the best product teams
-            successful: staying focused, moving quickly, and always aiming for
-            high-quality work.
+            Rizor E.I.R.L está construido sobre los hábitos que hacen exitosos a
+            los mejores equipos: mantenerse enfocados, moverse rápido y apuntar
+            siempre a un trabajo de alta calidad.
           </p>
         </div>
 
@@ -65,15 +65,17 @@ export const Features = () => {
                   <Link
                     href="#"
                     className={
-                      "group flex items-center justify-between gap-4 pe-4 pt-4 md:pe-6 md:pt-6"
+                      "group flex items-center justify-between gap-4 pe-4 pt-1 md:pt-2"
                     }
                   >
-                    <h3 className="font-display max-w-60 text-2xl leading-tight font-bold tracking-tight">
+                    <div className="space-y-3 pe-4 pt-1 md:pt-2">
+                    <h3 className="font-display text-2xl leading-tight font-bold tracking-tight">
                       {item.title}
                     </h3>
-                    <div className="rounded-full border p-2">
-                      <ChevronRight className="size-6 transition-transform group-hover:translate-x-1 lg:size-9" />
-                    </div>
+                  </div>
+                  <div className="shrink-0 rounded-full border p-2">
+                    <ChevronRight className="size-6 transition-transform group-hover:translate-x-1 lg:size-9" />
+                  </div>
                   </Link>
                 </div>
                 {i < items.length - 1 && (

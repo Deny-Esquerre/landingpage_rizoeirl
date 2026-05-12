@@ -1,72 +1,77 @@
+"use client";
+
+import { useState } from "react";
+
 import Image from "next/image";
 
 import {
   ArrowRight,
-  Blend,
-  ChartNoAxesColumn,
-  CircleDot,
-  Diamond,
+  BarChart3,
+  Landmark,
+  Package,
+  Users,
+  X,
 } from "lucide-react";
 
 import { DashedLine } from "@/components/dashed-line";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogDescription,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 const features = [
   {
-    title: "Tailored workflows",
-    description: "Track progress across custom issue flows for your team.",
-    icon: CircleDot,
+    title: "Gestión de planillas y empleados",
+    description: "Control de asistencia, deducciones y planillas en un solo lugar.",
+    icon: Users,
   },
   {
-    title: "Cross-team projects",
-    description: "Collaborate across teams and departments.",
-    icon: Blend,
+    title: "Inventario centralizado",
+    description: "Coordina stock, entradas y salidas entre almacenes sin fricción.",
+    icon: Package,
   },
   {
-    title: "Milestones",
-    description: "Break projects down into concrete phases.",
-    icon: Diamond,
+    title: "Cierres financieros",
+    description: "Desglosa periodos contables en fases: emisión, revisión, cierre.",
+    icon: Landmark,
   },
   {
-    title: "Progress insights",
-    description: "Track scope, velocity, and progress over time.",
-    icon: ChartNoAxesColumn,
+    title: "Dashboard financiero en tiempo real",
+    description: "Visualiza ingresos, egresos y rentabilidad con gráficos actualizados.",
+    icon: BarChart3,
   },
 ];
 
 export const Hero = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <section className="py-28 lg:py-32 lg:pt-44">
       <div className="container flex flex-col justify-between gap-8 md:gap-14 lg:flex-row lg:gap-20">
         {/* Left side - Main content */}
         <div className="flex-1">
-          <h1 className="text-foreground max-w-160 text-3xl tracking-tight md:text-4xl lg:text-5xl xl:whitespace-nowrap">
-            Mainline Next.js template
+          <h1 className="text-foreground max-w-160 text-3xl tracking-tight md:text-4xl lg:text-5xl">
+            Rizor E.I.R.L — ERP para empresas peruanas
           </h1>
 
           <p className="text-muted-foreground text-1xl mt-5 md:text-3xl">
-            Mainline is an open-source website template built with shadcn/ui,
-            Tailwind 4 & Next.js
+            Controla personal, inventario y finanzas en un solo sistema. Hecho
+            para la realidad PYME del Perú.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4 lg:flex-nowrap">
             <Button asChild>
-              <a href="https://github.com/shadcnblocks/mainline-nextjs-template">
-                Get template
-              </a>
+              <a href="https://rizor-e-i-r-l.vercel.app/login">Iniciar sesión</a>
             </Button>
             <Button
               variant="outline"
               className="from-background h-auto gap-2 bg-linear-to-r to-transparent shadow-md"
-              asChild
+              onClick={() => setOpen(true)}
             >
-              <a
-                href="https://shadcnblocks.com"
-                className="max-w-56 truncate text-start md:max-w-none"
-              >
-                Built by shadcnblocks.com
-                <ArrowRight className="stroke-3" />
-              </a>
+              Conocer más
+              <ArrowRight className="stroke-3" />
             </Button>
           </div>
         </div>
@@ -100,13 +105,33 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="mt-12 max-lg:ml-6 max-lg:h-[550px] max-lg:overflow-hidden md:mt-20 lg:container lg:mt-24">
-        <div className="relative h-[793px] w-full">
+      <Dialog open={open} onOpenChange={setOpen}>
+        <div className="flex items-start justify-between">
+          <DialogTitle>¿Qué es Rizor E.I.R.L?</DialogTitle>
+          <button
+            onClick={() => setOpen(false)}
+            className="text-muted-foreground hover:text-foreground -mr-1 -mt-1 rounded-sm p-1 transition-colors"
+          >
+            <X className="size-5" />
+          </button>
+        </div>
+        <DialogDescription>
+          Rizor E.I.R.L es el sistema de gestión todo-en-uno que reemplaza tus
+          hojas de cálculo. Centraliza personal, inventario y finanzas en un
+          solo lugar con control de asistencias, planillas automáticas, stock en
+          tiempo real y dashboard financiero. Hecho para la PYME peruana, sin
+          complicaciones.
+        </DialogDescription>
+      </Dialog>
+
+      <div className="mt-12 max-lg:ml-6 md:mt-20 lg:container lg:mt-24">
+        <div className="relative w-full">
           <Image
-            src="/hero.webp"
+            src="/favicon/pantalla principal clara.png"
             alt="hero"
-            fill
-            className="rounded-2xl object-cover object-left-top shadow-lg max-lg:rounded-tr-none"
+            width={1570}
+            height={793}
+            className="w-full h-auto rounded-2xl shadow-lg max-lg:rounded-tr-none"
           />
         </div>
       </div>

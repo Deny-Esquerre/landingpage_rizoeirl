@@ -63,11 +63,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Mainline - Modern Next.js Template",
-    template: "%s | Mainline",
+    default: "Rizor ERP - Gestión Empresarial",
+    template: "%s | Rizor ERP",
   },
   description:
-    "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
+    "Rizor ERP - Sistema de planificación de recursos empresariales moderno y escalable.",
   keywords: [
     "Next.js",
     "nextjs template",
@@ -102,26 +102,26 @@ export const metadata: Metadata = {
     shortcut: [{ url: "/favicon/favicon.ico" }],
   },
   openGraph: {
-    title: "Mainline - Modern Next.js Template",
+    title: "Rizor ERP - Gestión Empresarial",
     description:
-      "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
-    siteName: "Mainline",
+      "Rizor ERP - Sistema de planificación de recursos empresariales moderno y escalable.",
+    siteName: "Rizor ERP",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Mainline - Modern Next.js Template",
+        alt: "Rizor ERP - Gestión Empresarial",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mainline - Modern Next.js Template",
+    title: "Rizor ERP - Gestión Empresarial",
     description:
-      "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
+      "Rizor ERP - Sistema de planificación de recursos empresariales moderno y escalable.",
     images: ["/og-image.jpg"],
-    creator: "@ausrobdev",
+    creator: "@rizorerp",
   },
 };
 
